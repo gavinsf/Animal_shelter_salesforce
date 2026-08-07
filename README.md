@@ -1,4 +1,6 @@
-# Salesforce Object Schema
+# Animal Shelter Salesforce
+- Designed independently in schema.txt
+- Built using Claude LLM with Salesforce CLI
 
 
 ## Objects
