@@ -52,7 +52,7 @@
 | Age | Number | Yes |
 | Home_checked | Boolean | No |
 
-## Home_Information
+### Home_Information
 | Field | Type | Required |
 |---|---|---|
 | Adopter | Master-Detail | Yes |
