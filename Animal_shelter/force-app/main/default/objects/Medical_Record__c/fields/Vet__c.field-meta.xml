@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Vet__c</fullName>
+    <label>Vet</label>
+    <referenceTo>Vet__c</referenceTo>
+    <relationshipLabel>Medical Records</relationshipLabel>
+    <relationshipName>Medical_Records</relationshipName>
+    <required>true</required>
+    <type>Lookup</type>
+    <deleteConstraint>Restrict</deleteConstraint>
+</CustomField>

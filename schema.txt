@@ -1,0 +1,56 @@
+Object: Animal. All fields required.
+- Name: text
+- Species: picklist (Dog, Cat, Rabbit)
+- Breed: text
+- Intake_status: picklist (Adopted, Recovery, Available, New, Reclaimed)
+- Intake_date : Date
+
+Object: Medical Record. Animal, Visit_date, Procedure, Vet required.
+- Animal: master-detail
+- Visit_date: date
+- Procedure: text
+- Vet : lookup
+- Additional_info : long text
+
+Object: Vet. All required except URL.
+- Name : text
+- Location : text long
+- Phone : Phone
+- Email : Email
+- Website : URL
+
+Object: Adoption. All required except Fee.
+- Adopter : lookup
+- Animal : lookup
+- Adoption_date : Date
+- Fee : Currency
+
+Object: Person. All required.
+- Name: text
+- Phone : Phone
+- Email : Email
+
+Object: Adopter. All required except Home_checked.
+- Person : lookup
+- Address : text long
+- Age : Number
+- Home_checked : Boolean
+
+Object: Home_information. Type and Renting required.
+- Adopter : master-detail
+- Type : picklist (house, apartment, condo, acreage)
+- Renting : Boolean
+- Details : long text
+- Has_yard : Boolean
+
+Object: Pet_experience.
+- Adopter : master-detail
+- Current_pets : long text
+- Current_pets_spayed : boolean
+- Current_pets_vaccinated : boolean
+
+Object: Donation. Amount and Date required.
+- Person: lookup
+- Amount: currency
+- Date: Date
+
