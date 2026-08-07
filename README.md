@@ -1,6 +1,8 @@
 # Salesforce Object Schema
 
-## Animal
+
+## Objects
+### Animal
 | Field | Type | Required |
 |---|---|---|
 | Name | Text | Yes |
@@ -9,7 +11,7 @@
 | Intake_status | Picklist (Adopted, Recovery, Available, New, Reclaimed) | Yes |
 | Intake_date | Date | Yes |
 
-## Medical_Record
+### Medical_Record
 | Field | Type | Required |
 |---|---|---|
 | Animal | Master-Detail | Yes |
@@ -18,7 +20,7 @@
 | Vet | Lookup | Yes |
 | Additional_info | Long Text | No |
 
-## Vet
+### Vet
 | Field | Type | Required |
 |---|---|---|
 | Name | Text | Yes |
@@ -27,7 +29,7 @@
 | Email | Email | Yes |
 | Website | URL | No |
 
-## Adoption
+### Adoption
 | Field | Type | Required |
 |---|---|---|
 | Adopter | Lookup | Yes |
@@ -35,14 +37,14 @@
 | Adoption_date | Date | Yes |
 | Fee | Currency | No |
 
-## Person
+### Person
 | Field | Type | Required |
 |---|---|---|
 | Name | Text | Yes |
 | Phone | Phone | Yes |
 | Email | Email | Yes |
 
-## Adopter
+### Adopter
 | Field | Type | Required |
 |---|---|---|
 | Person | Lookup | Yes |
@@ -59,7 +61,7 @@
 | Details | Long Text | No |
 | Has_yard | Boolean | No |
 
-## Pet_Experience
+### Pet_Experience
 | Field | Type | Required |
 |---|---|---|
 | Adopter | Master-Detail | Yes |
